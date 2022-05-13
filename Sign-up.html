@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Sign-Up-TEX-Z</title>
+    <script src="https://use.fontawesome.com/e099c23117.js"></script>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <script type="text/javascript" src="./Script/javascript.js"></script>
+    <link rel="stylesheet" href="./Sign-up.css" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+  </head>
+  <body>
+     <!-- Nav Bar -->
+    
+     <div class="navbar">
+      <div class="navbar-container">
+        <h3 class="collapsible" id="open" java onclick="opennav()">&#9776</h3>
+      </div>
+      <nav class="navbar-buttons" id="nav">
+        <div class="cancel" id="cancel" java onclick="closenav()"> &times; </div>
+        <a href="./index.html" class="navbar1">Home</a>
+        <a href="#about" class="navbar1">About Us</a>
+        <a href="./contact  us.html" class="navbar1">Contact Us</a>
+        <a href="#" class="navbar1">Blog</a>
+        <a href="./Login page.html" class="navbar2">Request Tex-Z</a>
+      </nav>
+      <a href="#"
+        ><img src="./images/logo.png" alt="" width="60px" id="logo" class="logo"
+      /></a>
+    </div>
+    
+    <!-- Nav Bar ends -->
+    <div class="login-main-compound">
+      <div class="login-sub-compound">
+        <a href="./index.html"    class="cancel-login"
+        java
+        onmouseover="dontleave()"
+        java
+        onmouseout="continuetyping()"
+        java
+        onclick="retuntoprevious()">
+        &times;</a>
+        
+        <div class="z-index">
+          <p class="dont-leave-pls" id="dont-leave-pls">
+            Oh! you have an account, go Login-In😘
+          </p>
+          <h3 class="welcome-back">
+            Become a
+            <div class="texzian">Tex-zian</div>
+          </h3>
+          <form action="" class="login-form">
+            <label for="name" class="label-for-login">Full Name</label>
+            <br />
+            <input
+              type="text"
+              name="name"
+              id="login-email"
+              placeholder="Enter your full name"
+            />
+            <br />
+            <br />
+            <label for="email" class="label-for-login"> E-mail</label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="login-email"
+              placeholder="Enter your e-mail address"
+            />
+            <br />
+            <br />
+            <label for="password" class="label-for-login">Password</label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="login-password"
+              placeholder="Type in your password"
+            />
+            <br />
+            <br />
+            <label for="password" class="label-for-login"
+              >Re-enter Password</label
+            >
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="login-password"
+              placeholder="Type in your password again"
+            />
+            <button type="submit" class="login-in">Sign Up</button>
+            <p class="already-have-an-account">I have an account   <a href="./Login page.html">Log-In</a></p>
+          </div>
+        <div class="thanks-for-coming-back-compound-flip">
+          <img
+            src="./images/NO WAHALA  BACKGROUND.png"
+            alt=""
+            class="thanks-for-coming-back"
+            width="400px"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

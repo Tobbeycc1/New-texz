@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-y: hidden;
+}
+:root {
+  --tex-zcolor: rgb(221, 148, 57);
+  --tex-zbackground: linear-gradient(
+    4deg,
+    rgba(221, 148, 57, 1) 0%,
+    rgba(254, 183, 12, 1) 100%
+  );
+}
+.PS {
+  margin-left: 40px;
+  position: absolute;
+  top: 100px;
+  color: var(--tex-zcolor);
+}
+.big-house {
+  position: absolute;
+  top: 150px;
+}
+.profile-settings-house {
+  /* background: red; */
+  width: 300px;
+  padding: 20px;
+  height: 500px;
+  margin-left: 40px;
+  float: left;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.change-name {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.change-name-1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.change-name:hover,
+.change-name-1:hover {
+  color: var(--tex-zcolor);
+}
+.profile-contents-house {
+  /* background: blue; */
+  width: 230px;
+  padding: 20px;
+  height: 1000px;
+  top: 150px;
+  float: left;
+}
+.label-for-login {
+  font-size: 15px;
+  font-weight: bold;
+}
+input {
+  background: rgb(187, 225, 236);
+  width: 350px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.save {
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  font-size: 20px;
+  background: var(--tex-zbackground);
+  color: white;
+  cursor: pointer;
+}

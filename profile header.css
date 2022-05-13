@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --tex-zcolor: rgb(221, 148, 57);
+  --tex-zbackground: linear-gradient(
+    4deg,
+    rgba(221, 148, 57, 1) 0%,
+    rgba(254, 183, 12, 1) 100%
+  );
+}
+body {
+  overflow-y: hidden;
+}
+.profile-contents-house {
+  /* background: blue; */
+  width: 230px;
+  padding: 20px;
+  height: 1000px;
+  top: 150px;
+  float: left;
+}
+/* nav bar */
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: black;
+  position: fixed;
+  z-index: -99;
+}
+.navbar-container {
+  background: white;
+  display: none;
+}
+.collapsible {
+  display: none;
+  cursor: pointer;
+}
+.cancel {
+  display: none;
+  cursor: pointer;
+}
+
+.logo {
+  margin: 20px;
+  transform: translateY(-65px);
+}
+.navbar-buttons {
+  text-align: right;
+  margin: 20px;
+}
+.navbar1 {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+
+.navbar1:hover {
+  color: var(--tex-zcolor);
+}
+.navbar2 {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+.navbar2:hover {
+  color: var(--tex-zcolor);
+}
+.fa-bell {
+  margin-left: 80px;
+  color: red;
+}
+/* nav bar ends */
+/* Profile options */
+.profile-box-house {
+  transform: scale(-1, 1);
+  height: 0px;
+}
+.profile-settings-house {
+  /* background: red; */
+  width: 300px;
+  padding: 20px;
+  height: 500px;
+  margin-left: 40px;
+  float: left;
+}
+.profile-option-box {
+  box-shadow: 3px 0px 10px 2px rgba(0, 0, 0, 0.36);
+  line-height: 30px;
+  margin: 50px 10px;
+  position: absolute;
+  background: white;
+  z-index: 201;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  transform: scale(-1, 1);
+  cursor: pointer;
+  font-size: 15px;
+  display: none;
+}
+.profile-option-text {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+.profile-option-text-logout {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.profile-option-text:hover {
+  color: var(--tex-zcolor);
+}
+.profile-option-text-logout:hover {
+  color: var(--tex-zcolor);
+}
+.map {
+  position: fixed;
+  z-index: -100;
+  width: 100%;
+  height: 110%;
+  top: -40px;
+  filter: grayscale();
+}
+.content {
+  height: 0px;
+  display: flex;
+  text-align: center;
+  /* z-index: 2-99; */
+  transform: translateY(200px);
+  align-items: center;
+  justify-content: center;
+}
+.one {
+  background: var(--tex-zbackground);
+  width: 40%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 900;
+  font-size: 35px;
+}
+.four {
+  transform: translateY(225px);
+  background: rgba(128, 128, 128, 0.637);
+  width: 40%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+.two {
+  width: 36%;
+  height: 50px;
+  border: none;
+  padding: 20px;
+  font-weight: bold;
+}
+.content-2 {
+  height: 0px;
+  display: flex;
+  text-align: center;
+  z-index: 2-99;
+  transform: translateY(330px);
+  align-items: center;
+  justify-content: center;
+  background: gray;
+}
+.content-3 {
+  height: 0px;
+  display: flex;
+  text-align: center;
+  z-index: 2-99;
+  transform: translateY(450px);
+  align-items: center;
+  justify-content: center;
+  background: gray;
+}
+.content-4 {
+  height: 0px;
+  display: flex;
+  text-align: center;
+  z-index: 2-99;
+  transform: translateY(520px);
+  align-items: center;
+  justify-content: center;
+  background: gray;
+}
+
+.fa-route {
+  color: white;
+  background: none;
+}
+#dont-show {
+  display: none;
+}
+/* Small Laptop */
+
+@media screen and (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar-container {
+    width: 100%;
+    background: white;
+    text-align: center;
+    display: block;
+    box-shadow: -1px 10px 5px 0px rgba(50, 50, 50, 0.75);
+    transform: scale(-1, 1);
+    padding-left: 10px;
+  }
+
+  .collapsible {
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    font-size: 180%;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    font-size: 40px;
+    background: white;
+  }
+
+  .cancel {
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    width: 30px;
+    background: red;
+    position: fixed;
+  }
+  .navbar-buttons {
+    display: block;
+    margin: 0px 0px;
+    padding: 10px;
+    height: 100vh;
+    background: url(./images/profile\ hamburger\ background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+    overflow-y: scroll;
+
+    box-shadow: -1px 10px 5px 0px rgba(50, 50, 50, 0.75);
+  }
+  .navbar {
+    background: none;
+  }
+  .logo {
+    width: 80px;
+    background: black;
+    padding: 5px;
+    display: block;
+    position: relative;
+    top: -15px;
+  }
+  .navbar1,
+  #dont-show {
+    text-align: center;
+    display: block;
+    margin: 50px 0px 20px 0px;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+  }
+
+  .navbar2 {
+    font-size: 20px;
+    color: black;
+  }
+  .fa-bell {
+    text-align: center;
+    display: block;
+    margin: 50px 0px 20px 0px;
+    font-size: 20px;
+  }
+  .navbar {
+    z-index: 99;
+  }
+
+  .profile-option-box {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profile-settings-house {
+    float: none;
+    width: 300px;
+    height: 100%;
+    margin-left: 40px;
+  }
+  .big-house {
+    width: 80%;
+  }
+  .profile-contents-house {
+    margin-left: 40px;
+    width: 100%;
+  }
+  input {
+    width: 100%;
+  }
+}

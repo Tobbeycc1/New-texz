@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --tex-zcolor: rgb(221, 148, 57);
+  --tex-zbackground: linear-gradient(
+    4deg,
+    rgba(221, 148, 57, 1) 0%,
+    rgba(254, 183, 12, 1) 100%
+  );
+}
+.navbar {
+  display: none;
+}
+
+/* Background */
+.login-main-compound {
+  background: url(./images/background\ image\ for\ login\ page.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cancel-login {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  width: 50px;
+  transform: translateY(-80px);
+  text-align: center;
+  position: absolute;
+  cursor: pointer;
+}
+.dont-leave-pls {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  left: 270px;
+  transform: translateY(-100px);
+  text-align: center;
+  position: absolute;
+  display: none;
+}
+.cancel-login:hover {
+  color: red;
+}
+
+.login-sub-compound {
+  background: white;
+  margin: 10%;
+  width: 900px;
+  height: 825px;
+  border-radius: 10px;
+}
+.welcome-back {
+  margin-top: 30px;
+  font-size: 40px;
+  width: 200px;
+  padding: 30px;
+}
+.lni-facebook-filled {
+  width: 350px;
+  background: rgb(6, 4, 151);
+  padding: 10px;
+  margin: 20px 0px 10px 30px;
+  text-align: center;
+  display: block;
+}
+.facebook {
+  vertical-align: middle;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 20px;
+  display: none;
+}
+.lni-google {
+  display: block;
+  width: 350px;
+  background: rgb(126, 10, 10);
+  padding: 10px;
+  margin: 20px 0px 10px 30px;
+  text-align: center;
+}
+.login-form {
+  margin: 30px;
+}
+.label-for-login {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+input {
+  background: rgb(187, 225, 236);
+  width: 350px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.or-case {
+  text-align: center;
+  width: 350px;
+  margin: 0px 0px 10px 30px;
+}
+
+.or {
+  display: inline;
+  text-align: center;
+  width: 30px;
+  color: rgb(168, 163, 163);
+  background: white;
+  position: absolute;
+  z-index: 200;
+}
+.line-1 {
+  margin: 0px 30px;
+  width: 350px;
+  transform: translateY(15px);
+  border-top: 1px solid;
+  color: gray;
+}
+.forgot-password {
+  text-decoration: underline black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login-in {
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  margin: 30px 0px 30px 0px;
+  height: 40px;
+  background: black;
+  text-align: center;
+  width: 350px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.dont-have-an-account-yet {
+  margin-left: 30px;
+  font-size: 15px;
+  width: 350px;
+  text-align: center;
+  font-weight: bold;
+}
+.signup-from-login {
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  margin: 10px 30px;
+  height: 40px;
+  background: rgb(243, 241, 241);
+  text-align: center;
+  width: 350px;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+.login-in:hover {
+  background: none;
+  color: black;
+  border: 2px solid black;
+}
+.thanks-for-coming-back {
+  margin-top: 5%;
+  top: 180px;
+  left: 700px;
+  height: 730px;
+  clear: both;
+}
+.z-index {
+  margin-right: 35px;
+  float: left;
+  z-index: 100;
+  width: 430px;
+}
+/* Background ends */
+@media screen and (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .thanks-for-coming-back {
+    display: none;
+  }
+  .navbar {
+    display: block;
+  }
+  .z-index {
+    width: 100%;
+    border-radius: 0px;
+    text-align: center;
+    align-self: center;
+  }
+
+  .login-sub-compound {
+    width: 70%;
+    padding-top: 40px;
+  }
+
+  .welcome-back {
+    margin-top: 0px;
+    display: inline-block;
+    text-align: center;
+    padding: 0px;
+  }
+  .lni-facebook-filled {
+    width: 80%;
+    padding: 10px;
+    margin: 30px 20px 10px 20px;
+  }
+  .lni-google {
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .login-in {
+    width: 80%;
+  }
+  .dont-have-an-account-yet {
+    display: block;
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .signup-from-login {
+    display: inline;
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  input {
+    width: 80%;
+  }
+  .login-form {
+    text-align: center;
+    display: inline;
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 0px;
+  }
+  .login-in {
+    width: 80%;
+    margin-left: 35px;
+    margin-right: 20px;
+  }
+  input {
+    width: 80%;
+  }
+  .or-case {
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .or {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    color: rgb(168, 163, 163);
+    background: white;
+    position: absolute;
+    z-index: 95;
+  }
+  .line-1 {
+    width: 80%;
+    text-align: center;
+    display: inline-block;
+  }
+  .label-for-login {
+    display: block;
+  }
+  .login-sub-compound {
+    border-radius: none;
+    background: white;
+    margin: 80px 0px;
+    width: 94%;
+    height: 825px;
+    border-radius: 0px;
+  }
+  .cancel-login {
+    display: none;
+  }
+  .login-main-compound {
+    height: 95%;
+  }
+
+  /* nav bar */
+  .navbar {
+    width: 100%;
+    height: 0px;
+    background: black;
+    position: fixed;
+    z-index: 99;
+  }
+  .navbar-container {
+    background: white;
+    display: none;
+  }
+  .collapsible {
+    display: none;
+    cursor: pointer;
+  }
+  .cancel {
+    display: none;
+    cursor: pointer;
+  }
+
+  .logo {
+    margin: 20px;
+    transform: translateY(-65px);
+  }
+  .navbar-buttons {
+    text-align: right;
+    margin: 20px;
+  }
+  .navbar1 {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+  }
+  .navbar1:hover {
+    color: var(--tex-zcolor);
+  }
+  .navbar2 {
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    background: var(--tex-zbackground);
+    transition-timing-function: ease-in-out;
+  }
+  .navbar2:hover {
+    border: 2px solid var(--tex-zcolor);
+    background: none;
+    color: var(--tex-zcolor);
+  }
+  /* nav bar ends */
+
+  .navbar-container {
+    width: 100%;
+    background: white;
+    text-align: center;
+    display: block;
+    box-shadow: -1px 10px 5px 0px rgba(50, 50, 50, 0.75);
+    transform: scale(-1, 1);
+    padding-left: 10px;
+  }
+
+  .collapsible {
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    font-size: 180%;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    font-size: 40px;
+    background: white;
+  }
+
+  .cancel {
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    width: 30px;
+    background: red;
+  }
+  .navbar-buttons {
+    display: block;
+    margin: 0px 0px;
+    padding: 10px;
+    height: 280px;
+    background: white;
+    display: none;
+    box-shadow: -1px 10px 5px 0px rgba(50, 50, 50, 0.75);
+  }
+  .navbar {
+    background: none;
+  }
+  .logo {
+    width: 80px;
+    background: black;
+    padding: 5px;
+    display: block;
+    position: relative;
+    top: -15px;
+  }
+  .navbar1 {
+    text-align: center;
+    display: block;
+    margin: 0px 0px 20px 0px;
+    font-size: 20px;
+    color: black;
+  }
+  .navbar2 {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .facebook {
+    font-size: 10px;
+    margin: 10px;
+  }
+}

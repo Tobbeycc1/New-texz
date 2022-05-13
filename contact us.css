@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --tex-zcolor: rgb(221, 148, 57);
+  --tex-zbackground: linear-gradient(
+    4deg,
+    rgba(221, 148, 57, 1) 0%,
+    rgba(254, 183, 12, 1) 100%
+  );
+}
+/* nav bar */
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: black;
+  position: fixed;
+  z-index: 99;
+}
+.navbar-container {
+  background: white;
+  display: none;
+}
+.collapsible {
+  display: none;
+  cursor: pointer;
+}
+.cancel {
+  display: none;
+  cursor: pointer;
+}
+
+.logo {
+  margin: 20px;
+  transform: translateY(-65px);
+}
+.navbar-buttons {
+  text-align: right;
+  margin: 20px;
+}
+.navbar1 {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+
+.navbar1:hover {
+  color: var(--tex-zcolor);
+}
+.navbar2 {
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  background: var(--tex-zbackground);
+  transition-timing-function: ease-in-out;
+}
+.navbar2:hover {
+  border: 2px solid var(--tex-zcolor);
+  background: none;
+  color: var(--tex-zcolor);
+}
+/* nav bar ends */
+/* chat with tobbey */
+
+/* chat with tobbey */
+.pencil-house {
+  text-align: right;
+  margin: 30px 10px;
+  z-index: 98;
+  top: 90%;
+  position: sticky;
+}
+.pencil {
+  background: var(--tex-zbackground);
+  text-align: center;
+  padding: 5px;
+  border-radius: 100%;
+  vertical-align: middle;
+  box-shadow: 7px 7px 19px 0px rgba(50, 50, 50, 0.3);
+  transition: all 0.5s ease-out;
+}
+.chat-with-tobbey {
+  background: white;
+  text-align: right;
+  display: inline;
+  width: 100px;
+  font-weight: bold;
+  color: brown;
+  font-size: 20px;
+  box-shadow: 7px 7px 19px 0px rgba(50, 50, 50, 0.3);
+  height: 1000px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+}
+.pencil:hover {
+  background: black;
+  width: 5%;
+  height: 5%;
+}
+/* chat with tobbey ends */
+
+/* background image */
+
+.main-compound {
+  margin: 0px 20% -100px 20%;
+  position: relative;
+  top: -150px;
+  height: 528px;
+}
+.contact-us-compound {
+  clear: both;
+
+  text-align: center;
+  height: 528px;
+}
+.direction-compound {
+  text-align: center;
+  padding: 200px 20%;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.contact-us-direction {
+  color: var(--tex-zcolor);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.contact-us-subcompound {
+  width: 50%;
+  background: white;
+  height: 528px;
+  text-align: left;
+  transform: translateY(-100%);
+  position: relative;
+  left: 400px;
+  box-shadow: 5px 8px 19px 0px rgba(50, 50, 50, 1);
+}
+.contact-us-info {
+  background: var(--tex-zbackground);
+  vertical-align: top;
+  box-shadow: 5px 8px 19px 0px rgba(50, 50, 50, 1);
+}
+.float-1 {
+  width: 100%;
+  display: inline-block;
+  padding: 40px 10px;
+}
+.suggestion {
+  font-size: 15px;
+  line-height: 25px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+.drop-a-message-for-us {
+  padding-left: 30px;
+  font-size: 15px;
+}
+.background {
+  height: 400px;
+  background: url("./images/contact\ usbackground\ image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+/* Form */
+.client-details {
+  margin-top: 30px;
+}
+
+label {
+  color: grey;
+  font-size: 12px;
+}
+input {
+  border: none;
+  border-bottom: 2px solid var(--tex-zcolor);
+  padding: 5px;
+  width: 85%;
+}
+.client-name {
+  margin-left: 30px;
+  width: 32%;
+  margin-right: 5%;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.client-name-2 {
+  margin-left: 30px;
+  width: 22%;
+  margin-right: 10%;
+  margin-bottom: 60px;
+  display: block;
+}
+#email-address {
+  width: 330%;
+}
+textarea {
+  border: none;
+  border-bottom: 2px solid var(--tex-zcolor);
+  padding: 5px;
+  width: 150%;
+}
+.mirror-button {
+  transform: scale(-1, 1);
+}
+button {
+  transform: scale(-1, 1);
+  color: var(--tex-zcolor);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: white;
+  border: none;
+  box-shadow: 5px 8px 19px 0px rgba(50, 50, 50, 1);
+  margin: 0px 30px;
+  position: relative;
+  top: -50px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+button:hover {
+  color: white;
+  background: black;
+}
+/* Form ends */
+
+/* background image ends */
+
+@media screen and (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar-container {
+    width: 100%;
+    background: white;
+    text-align: center;
+    display: block;
+    box-shadow: -1px 10px 5px 0px rgba(50, 50, 50, 0.75);
+    transform: scale(-1, 1);
+    padding-left: 10px;
+  }
+
+  .collapsible {
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    font-size: 180%;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    font-size: 40px;
+    background: white;
+  }
+
+  .cancel {
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    width: 30px;
+    background: red;
+  }
+  .navbar-buttons {
+    display: block;
+    margin: 0px 0px;
+    padding: 10px;
+    height: 280px;
+    background: white;
+    display: none;
+    box-shadow: -1px 10px 5px 0px rgba(50, 50, 50, 0.75);
+  }
+  .navbar {
+    background: none;
+  }
+  .logo {
+    width: 80px;
+    background: black;
+    padding: 5px;
+    display: block;
+    position: relative;
+    top: -15px;
+  }
+  .navbar1 {
+    text-align: center;
+    display: block;
+    margin: 0px 0px 20px 0px;
+    font-size: 20px;
+    color: black;
+  }
+  .navbar2 {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .main-compound {
+    margin: 0px;
+    position: relative;
+    top: -150px;
+    height: 528px;
+  }
+  .contact-us-info {
+    margin: 0px auto;
+    width: 90%;
+    float: none;
+    display: block;
+  }
+  .contact-us-subcompound {
+    width: 90%;
+    background: white;
+    height: 150%;
+    text-align: left;
+    transform: translateY(0);
+    margin: 0px auto 50px auto;
+    position: none;
+    left: 0px;
+    box-shadow: 5px 8px 19px 0px rgba(50, 50, 50, 1);
+  }
+
+  .footer-compound {
+    margin-top: 150%;
+  }
+  .suggestion {
+    margin: 0px 15%;
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+  }
+  .drop-a-message-for-us {
+    margin: 0px 15%;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .first-row {
+    margin: 0px 15%;
+  }
+  .client-name {
+    margin-left: 10px;
+    width: 32%;
+    margin-right: 5%;
+    margin-bottom: 100px;
+    display: inline-block;
+  }
+  .client-name-2 {
+    margin: 0px 15%;
+    width: 22%;
+    margin-right: 10%;
+    margin-bottom: 100px;
+    display: block;
+  }
+  #email-address {
+    width: 330%;
+  }
+  textarea {
+    border: none;
+    border-bottom: 2px solid var(--tex-zcolor);
+    padding: 5px;
+    width: 150%;
+  }
+}
+@media screen and (max-width: 340px) {
+  .suggestion {
+    font-size: 20px;
+  }
+}
